@@ -5,16 +5,16 @@ import Hover from './hoc/Hover';
 
 function App() {
   return (
-    <>
     
+<div>
       <h2 className='heading'>
         Higher Order component
       </h2>
   <Click/>
   <br></br>
   <Hover/>
-   
-    </>
+   </div>
+    
   );
 }
 

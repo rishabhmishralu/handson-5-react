@@ -1,23 +1,20 @@
-import React from 'react'
-import { useState } from 'react'
+import React from "react";
+import { useState } from "react";
 
+const Counter = (WrappedComponent) => {
+  const Counter = () => {
+    const [first, setfirst] = useState(0);
 
-const Counter=(WrappedComponent)=>{
-const Counter = () => {
- const [first, setfirst] = useState(0)
-     
+    const click = () => {
+      setfirst(first + 5);
+    };
 
-  const click=()=>{
-  setfirst(first+5)
-  }
-    
-  return (
-    <div>
+    return (
+      <div>
         <WrappedComponent first={first} click={click} />
-       
-        </div>
-  )
-}
-return Counter
-}
+      </div>
+    );
+  };
+  return Counter;
+};
 export default Counter;
