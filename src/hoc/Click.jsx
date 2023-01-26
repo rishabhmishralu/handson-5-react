@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react'
+
 import Counter from './Counter'
 const Click = (props) => {
     const {first, click} = props
